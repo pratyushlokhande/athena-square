@@ -4,17 +4,28 @@
   margin: 64px 0;
   padding: 64px 0;
   background: #f3f0ff;
+
+  @media screen and (max-width: 768px) {
+    padding: 32px 0;
+  }
 }
 
 .offers-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 30px;
   margin-top: 64px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
   .offer {
+    position: relative;
     padding: 40px 35px;
     display: flex;
     flex-direction: column;
@@ -107,6 +118,7 @@
       }
 
       .applied-avatar {
+        position: relative;
         display: flex;
 
         img {
@@ -116,12 +128,14 @@
           object-position: center;
           border-radius: 50%;
 
-          &:nth-child(2) {
-            transform: translateX(-50%);
+          &:nth-child(1) {
+            transform: translateX(100%);
+            z-index: 3;
           }
 
-          &:nth-child(3) {
-            transform: translateX(-100%);
+          &:nth-child(2) {
+            transform: translateX(50%);
+            z-index: 2;
           }
         }
       }

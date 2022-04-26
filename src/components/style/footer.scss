@@ -8,6 +8,10 @@
   padding: 0 10rem;
   background: linear-gradient(100.98deg, #6360de -19.09%, #a24bd8 117.78%);
 
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+
   .footer-head {
     display: flex;
     justify-content: space-between;
@@ -31,6 +35,19 @@
       gap: 10px;
       align-items: center;
     }
+
+    @media screen and (max-width: 768px) {
+      // flex-direction: column;
+      // align-items: flex-start;
+      // gap: 1rem;
+      h3 {
+        font-size: 22px;
+      }
+
+      .btn-contact {
+        padding: 5px 10px;
+      }
+    }
   }
 
   hr {
@@ -44,6 +61,18 @@
   display: flex;
   gap: 30px;
   padding: 60px 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .about-athena,
+    .quick-links,
+    .upcoming-opportunities {
+      width: 100%;
+    }
+  }
 
   .about-athena {
     flex-grow: 2;
@@ -99,6 +128,20 @@
   display: flex;
   justify-content: space-between;
   padding: 16px 10rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      order: 2;
+    }
+
+    ul {
+      order: 1;
+    }
+  }
 
   p {
     font-size: 20px;

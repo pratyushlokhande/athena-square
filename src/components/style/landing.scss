@@ -1,7 +1,7 @@
 .landing {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     65.71deg,
     rgba(96, 53, 255, 0.16) -11.34%,
@@ -53,6 +53,51 @@
       position: absolute;
       top: 40%;
       right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing {
+    gap: 16px;
+
+    .main-heading {
+      width: 80%;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 38px;
+    }
+
+    .sub-heading {
+      width: 80%;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+    }
+
+    .button-container {
+      gap: 16px;
+    }
+
+    .asset-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      pointer-events: all;
+      gap: 10%;
+      margin: 2rem 0;
+      .land-left {
+        position: relative;
+        width: 50%;
+        margin-left: -10%;
+      }
+
+      .land-right {
+        position: relative;
+        width: 50%;
+      }
     }
   }
 }

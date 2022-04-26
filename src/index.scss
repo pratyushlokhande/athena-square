@@ -45,6 +45,7 @@ span {
   text-decoration: none;
   display: grid;
   place-items: center;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -64,4 +65,15 @@ span {
   line-height: 52px;
   text-align: center;
   color: #404040;
+
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

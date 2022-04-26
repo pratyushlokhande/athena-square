@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/work-extension.scss'
 
-import {FaGithub, FaCaretUp, FaPython, FaReact, FaJava} from 'react-icons/fa'
+import {FaGithub, FaCaretUp, FaPython, FaReact, FaJava, FaLinkedin, FaInstagram, FaSpotify} from 'react-icons/fa'
 
 const WorkExtension = () => {
   return (
@@ -27,7 +27,7 @@ const WorkExtension = () => {
             {/* HACKERRANK */}
             <div className="dev-profile hacker-rank">
                 <div className="dev-profile-heading">
-                    <FaGithub className='icon' /> Hacker Rank
+                    <FaGithub className='icon' /> HackerRank
                 </div>
                 <div className="dev-profile-description">
                     <h5>Problems solved this month</h5>
@@ -91,10 +91,10 @@ const WorkExtension = () => {
                 </div>
             </div>
             <div className="profile-links">
-                <a href="#" className="link"><FaGithub /> Portfolio</a>
-                <a href="" className="link"><FaGithub /> Github</a>
-                <a href="" className="link"><FaGithub /> Codechef</a>
-                <a href="" className="link"><FaGithub /> LinkedIn</a>
+                <a href="#" className="link"><FaSpotify className='icon' /> Portfolio</a>
+                <a href="" className="link"><FaGithub className='icon' /> Github</a>
+                <a href="" className="link"><FaInstagram className='icon' /> Codechef</a>
+                <a href="" className="link"><FaLinkedin className='icon' /> LinkedIn</a>
             </div>
         </div>
 
