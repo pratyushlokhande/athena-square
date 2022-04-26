@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/athena-square/static/css/main.d4b32a63.css",
+    "main.css": "/athena-square/static/css/main.1b0c9ed0.css",
     "main.js": "/athena-square/static/js/main.5b445c43.js",
     "static/js/787.9dce5d01.chunk.js": "/athena-square/static/js/787.9dce5d01.chunk.js",
     "static/media/landing-right.png": "/athena-square/static/media/landing-right.1b0bf2b5f2947dc5fe71.png",
     "static/media/landing-left.png": "/athena-square/static/media/landing-left.cc80d4c15e9eea87840b.png",
     "index.html": "/athena-square/index.html",
-    "main.d4b32a63.css.map": "/athena-square/static/css/main.d4b32a63.css.map",
+    "main.1b0c9ed0.css.map": "/athena-square/static/css/main.1b0c9ed0.css.map",
     "main.5b445c43.js.map": "/athena-square/static/js/main.5b445c43.js.map",
     "787.9dce5d01.chunk.js.map": "/athena-square/static/js/787.9dce5d01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4b32a63.css",
+    "static/css/main.1b0c9ed0.css",
     "static/js/main.5b445c43.js"
   ]
 }
