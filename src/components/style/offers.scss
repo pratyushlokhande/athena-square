@@ -1,0 +1,158 @@
+.offers {
+  position: relative;
+  width: 100%;
+  margin: 64px 0;
+  padding: 64px 0;
+  background: #f3f0ff;
+}
+
+.offers-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 64px;
+
+  .offer {
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 365px;
+    background-color: #fff;
+
+    .offer-header {
+      display: flex;
+      gap: 16px;
+
+      .company-avatar {
+        width: fit-content;
+
+        img {
+          width: 60px;
+          aspect-ratio: 1;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+        }
+      }
+
+      .offer-company {
+        width: 100%;
+        h3 {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+
+          color: #000000;
+        }
+
+        h4 {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #727272;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .offer-company-icon {
+            color: #5852e3;
+          }
+        }
+      }
+    }
+
+    .offer-body {
+      .body-head {
+        h1 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 30px;
+
+          color: #000000;
+        }
+
+        h2 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #727272;
+        }
+      }
+
+      .body-description {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #727272;
+      }
+    }
+
+    .offer-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btn-offer {
+        background: #f3f0ff;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #684ec8;
+      }
+
+      .applied-avatar {
+        display: flex;
+
+        img {
+          width: 40px;
+          aspect-ratio: 1;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+
+          &:nth-child(2) {
+            transform: translateX(-50%);
+          }
+
+          &:nth-child(3) {
+            transform: translateX(-100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.offer-button {
+  margin: 64px 0;
+  display: grid;
+  place-items: center;
+}
+
+.offer-asset-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  .offer-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .offer-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

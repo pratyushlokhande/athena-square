@@ -1,0 +1,67 @@
+// Importing fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+// Global
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+$primary-color: #684ec8;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+}
+
+span {
+  color: $primary-color;
+}
+
+.btn {
+  width: 148px;
+  height: 47px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+
+.btn-primary {
+  background: $primary-color;
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid $primary-color;
+  box-sizing: border-box;
+  color: $primary-color;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  color: #404040;
+}

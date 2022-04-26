@@ -1,0 +1,50 @@
+.traction {
+  position: relative;
+  width: 100%;
+  margin: 64px 0;
+}
+
+.traction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 64px;
+}
+
+.traction-card {
+  padding: 40px;
+  background: linear-gradient(28.91deg, #f1effa 0.32%, #ffffff 94.27%);
+  border-radius: 30px;
+
+  .number {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #684ec8;
+  }
+
+  .context {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.traction-asset-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  .traction-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

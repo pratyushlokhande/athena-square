@@ -1,0 +1,265 @@
+.work-extension {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.dev-profiles {
+  grid-area: 1 / 1 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.profile {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.profile-description {
+  grid-area: 1 / 4 / 3 / 6;
+}
+
+.dev-profiles .dev-profile {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+
+  .dev-profile-heading {
+    font-weight: 500;
+    font-size: 13.6545px;
+    line-height: 20px;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .icon {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  .dev-profile-description {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: "Open Sans", sans-serif;
+
+    h5 {
+      font-weight: 400;
+      font-size: 9.76502px;
+      line-height: 15px;
+
+      letter-spacing: 0.268538px;
+
+      color: #ffffff;
+
+      &:nth-child(2) {
+        mix-blend-mode: normal;
+        opacity: 0.6;
+      }
+    }
+
+    .rate-count {
+      font-weight: 800;
+      font-size: 27.309px;
+      line-height: 27px;
+
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.268538px;
+
+      color: #ffffff;
+      display: flex;
+      gap: 5px;
+      align-items: baseline;
+
+      span {
+        font-weight: 400;
+        font-size: 10.0353px;
+        line-height: 14px;
+
+        display: flex;
+        align-items: flex-end;
+
+        color: #5eff5a;
+      }
+    }
+
+    .language-container {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      h1 {
+        font-weight: 700;
+        font-size: 18.206px;
+        line-height: 25px;
+        color: #fff;
+      }
+
+      .c-icon {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.codechef {
+  background: #65371a;
+}
+
+.hacker-rank {
+  background: #23b455;
+}
+
+.leetcode {
+  background: #f7b603;
+  color: #000;
+}
+
+.github {
+  background: #100f0d;
+}
+.profile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 13.0266px;
+  filter: drop-shadow(0px 0px 4.00818px rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 0;
+
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0 10px;
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 2px solid #e6e6e6;
+      box-shadow: 0px 0px 4.00818px rgba(0, 0, 0, 0.25);
+      display: grid;
+      place-items: center;
+      img {
+        width: 50%;
+        object-fit: contain;
+      }
+    }
+
+    .name {
+      font-weight: 700;
+      font-size: 18.0368px;
+      line-height: 27px;
+
+      color: #100f0d;
+    }
+    .designation {
+      font-weight: 400;
+      font-size: 13.0266px;
+      line-height: 127%;
+
+      text-align: center;
+
+      color: #000000;
+      word-wrap: break-word;
+    }
+  }
+
+  .athena-band {
+    position: relative;
+    background: #efe3ff;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    font-weight: 700;
+    font-size: 24.0491px;
+    line-height: 36px;
+
+    color: #684ec8;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .profile-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px;
+
+    .link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      // max-width: calc(330px * 3);
+      line-height: 19px;
+
+      color: #000000;
+    }
+  }
+}
+
+.profile-description {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 0;
+
+  .desc {
+    color: #000;
+
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 38px;
+      span {
+        color: #684ec8;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #3f3f3f;
+
+      span {
+        font-weight: 600;
+        color: #3f3f3f;
+      }
+    }
+  }
+}
