@@ -25,7 +25,7 @@ const Nav = () => {
   }
 
   return (
-    <div className='nav' style={scrollY > 0 ? navStyle : {}}>
+    <div className='nav' style={ (scrollY > 0 || isOpen) ? navStyle : {}}>
         <div className="navbar-container">
           <div className="nav-logo">
               <img src={require('../assets/athena-square-logo.png')} alt="athena-square" />
