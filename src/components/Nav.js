@@ -4,10 +4,14 @@ import './style/nav.scss'
 
 // dimention hook
 import useWindowDimensions from '../hooks/UseWindowDimensions'
+import useWindowScrollPositions from '../hooks/UseWindowScrollPosition'
 
 const Nav = () => {
 
   const [isOpen, setIsOpen] = React.useState(false)
+
+  const {scrollY} = useWindowScrollPositions()
+
 
   const toggleNav = () => {
     setIsOpen(!isOpen)
@@ -15,8 +19,13 @@ const Nav = () => {
 
   const { width } = useWindowDimensions();
 
+  const navStyle = {
+    backgroundColor: '#fff',
+    boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+  }
+
   return (
-    <div className='nav'>
+    <div className='nav' style={scrollY > 0 ? navStyle : {}}>
         <div className="navbar-container">
           <div className="nav-logo">
               <img src={require('../assets/athena-square-logo.png')} alt="athena-square" />
